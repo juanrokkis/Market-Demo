@@ -8,12 +8,15 @@ import com.market.demo.domain.repository.ProductRepository;
 import com.market.demo.persistence.crud.ProductoCrudRepository;
 import com.market.demo.persistence.entity.Producto;
 import com.market.demo.persistence.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public class ProductoRepository implements ProductRepository {
 
+    @Autowired
     private ProductoCrudRepository productoCrudRepository;
+    @Autowired
     private ProductMapper mapper;
 
     @Override
