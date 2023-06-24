@@ -23,7 +23,7 @@ public class Producto {
     private Integer idCategoria;
 
     @Column (name = "codigo_barras")
-    private Integer codigoBarras;
+    private String codigoBarras;
 
     @Column (name = "precio_venta")
     private Double precioVenta;
@@ -63,11 +63,11 @@ public class Producto {
         this.idCategoria = idCategoria;
     }
 
-    public Integer getCodigoBarras() {
+    public String getCodigoBarras() {
         return codigoBarras;
     }
 
-    public void setCodigoBarras(Integer codigoBarras) {
+    public void setCodigoBarras(String codigoBarras) {
         this.codigoBarras = codigoBarras;
     }
 
